@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icono.png" />
+    <link rel="stylesheet" href="./src/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks Web</title>
+  </head>
+  <body class="bg-zinc-900 select-none text-white">
+    <div
+      class="flex place-content-evenly items-center h-screen gap-x-2 media-principal"
+    >
+      <form
+        id="taskForm"
+        class="bg-zinc-700 px-10 py-12 rounded-md max-w-md shadow-lg"
+      >
+        <label for="title" class="block font-bold">Title:</label>
+        <input
+          type="text"
+          name="title"
+          placeholder="Write a title"
+          class="bg-gray-800 px-1 py-2 rounded-md w-full mb-2"
+        />
+        <label for="description" class="font-bold">Description:</label>
+        <textarea
+          class="bg-gray-800 px-1 py-2 rounded-md w-full resize-none mb-2"
+          name="description"
+          rows="3"
+          cols="50"
+          placeholder="Write a description"
+        ></textarea>
+        <button
+          class="bg-blue-600 hover:bg-blue-800 px-3 py-1 rounded-md text-lg"
+        >
+          Save
+        </button>
+      </form>
+      <div
+        id="tasksList"
+        class="w-full max-w-md h-3/5 p-10 overflow-auto rounded-md scroll display-form"
+      ></div>
+    </div>
+
+    <script type="module" class="" src="/src/main.ts"></script>
+  </body>
+</html>
